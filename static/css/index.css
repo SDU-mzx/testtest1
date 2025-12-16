@@ -120,7 +120,7 @@ body {
     color: var(--text-primary) !important;
     margin-bottom: 2rem !important;
     line-height: 1.1 !important;
-    max-width: 70ch;      /* 调大=更不容易换行；调小=更容易换行 */
+    max-width: 100ch;      /* 调大=更不容易换行；调小=更容易换行 */
     margin-left: auto;    /* 保持居中 */
     margin-right: auto;
     text-wrap: balance; 
