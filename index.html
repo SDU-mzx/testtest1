@@ -298,23 +298,6 @@
 </section>
 <!-- End teaser video -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-           Existing open-vocabulary scene understanding methods are primarily limited to coarse-grained understanding at the object category level, making them incapable of handling fine-grained queries. In this paper, we introduce a challenging task of fine-grained open-vocabulary scene understanding and propose a novel fine-grained 3D language gaussian splatting framework, FineSplat for short. Unlike prior methods that rely on the vision-language alignment model, such as CLIP, FineSplat models the feature field solely from textual captions, transforming the cross-modal feature matching challenge into a retrieval process between queries and captions. Specifically, we design the Fine-Grained Caption Generation (FGCG) strategy to obtain captions containing multi-dimensional fine-grained attributes. Then, the Fine-Grained Feature Field Modeling (FGFFM) strategy is introduced to encode generated fine-grained captions into object-level semantic features, which subsequently supervise the training of 3D Gaussian representations. Furthermore, we construct Fine-OVS, a benchmark to support research and evaluation of the fine-grained open-vocabulary scene understanding task. Extensive experiments conducted on the Fine-OVS demonstrate that our FineSplat framework significantly outperforms existing state-of-the-art methods.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
 <section class="section is-medium hero is-light">
   <div class="container">
     
@@ -366,108 +349,37 @@
   </div>
 </section>
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">🏆 Key Visualization Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>Qualitative Comparisons of 3D Object Localization:</strong> 
+          </p>
         </div>
+        <figure class="image is-centered">
+          <img src="static/images/localization.png" alt="Localization" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+          <figcaption class="has-text-centered is-size-6 mt-2">
+            Figure 3：Qualitative comparisons of fine-grained open-vocabulary 3D object localization on the Fine-OVS dataset. Black dashed boxes denote the annotated regions, and red points correspond to the predictions of the model.
+          </figcaption>
+        </figure>
+        <div class="content has-text-justified">
+          <p>
+            <strong>Qualitative Comparisons of 3D Semantic Segmentation:</strong>   
+          </p>
+        </div>
+        <figure class="image is-centered">
+          <img src="static/images/segmentation.png" alt="Segmentation" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+          <figcaption class="has-text-centered is-size-6 mt-2">
+            Figure 4：Qualitative comparisons of fine-grained open-vocabulary 3D semantic segmentation on the Fine-OVS dataset.
+          </figcaption>
+        </figure>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
