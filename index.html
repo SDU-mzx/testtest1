@@ -315,12 +315,46 @@
   </div>
 </section>
 <!-- End paper abstract -->
+<section class="section is-medium hero is-light">
+  <div class="container">
+    
+    <h2 class="title is-2 has-text-centered">
+      📌 TL;DR
+    </h2>
+    <hr>
+    
+    <div class="columns is-centered">
+      <div class="column is-10">
+        
+        <div class="content is-medium" style="text-align: justify;">
+          <p>
+           Existing open-vocabulary scene understanding methods are primarily limited to coarse-grained understanding at the object category level, making them incapable of handling fine-grained queries. 
+           In this paper, we introduce a challenging task of fine-grained open-vocabulary scene understanding and propose a novel fine-grained 3D language gaussian splatting framework, FineSplat for short. 
+           Unlike prior methods that rely on the vision-language alignment model, such as CLIP, FineSplat models the feature field solely from textual captions, transforming the cross-modal feature matching challenge into a retrieval process between queries and captions. 
+           Specifically, we design the Fine-Grained Caption Generation (FGCG) strategy to obtain captions containing multi-dimensional fine-grained attributes. 
+           Then, the Fine-Grained Feature Field Modeling (FGFFM) strategy is introduced to encode generated fine-grained captions into object-level semantic features, which subsequently supervise the training of 3D Gaussian representations. 
+           Furthermore, we construct Fine-OVS, a benchmark to support research and evaluation of the fine-grained open-vocabulary scene understanding task. Extensive experiments conducted on the Fine-OVS demonstrate that our FineSplat framework significantly outperforms existing state-of-the-art methods.
+          </p>
+          
+        </div>
+        <figure class="image is-centered">
+          <img src="static/images/teaser figure.png" alt="teaser figure" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+          <figcaption class="has-text-centered is-size-6 mt-2">
+            Visualization result of FineSplat and previous SOTA methods on fine-grained open-vocabulary 3D scene understanding. When given queries with multi-dimensional fine-grained attributes, GAGS and LangSplatV2 often obtain erroneous results due to feature mismatches, whereas our proposed method accurately activates the target objects, enabling effective fine-grained understanding of 3D scenes.
+          </figcaption>
+        </figure>
 
+      </div>
+    </div>
+  </div>
+</section>
+
+    
 <section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">🧩 Method Overview</h2>
+        <h2 class="title is-3">🔑 Method Overview</h2>
         <figure class="image is-centered">
           <img src="static/images/finesplat.png" alt="FineSplat Overview" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
           <figcaption class="has-text-centered is-size-6 mt-2">
