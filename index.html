@@ -323,7 +323,7 @@
         <figure class="image is-centered">
           <img src="static/images/teaser figure.png" alt="teaser figure" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
           <figcaption class="has-text-centered is-size-6 mt-2">
-            Visualization result of FineSplat and previous SOTA methods on fine-grained open-vocabulary 3D scene understanding. When given queries with multi-dimensional fine-grained attributes, GAGS and LangSplatV2 often obtain erroneous results due to feature mismatches, whereas our proposed method accurately activates the target objects, enabling effective fine-grained understanding of 3D scenes.
+            Figure 1: Visualization result of FineSplat and previous SOTA methods on fine-grained open-vocabulary 3D scene understanding. When given queries with multi-dimensional fine-grained attributes, GAGS and LangSplatV2 often obtain erroneous results due to feature mismatches, whereas our proposed method accurately activates the target objects, enabling effective fine-grained understanding of 3D scenes.
           </figcaption>
         </figure>
 
@@ -341,7 +341,7 @@
         <figure class="image is-centered">
           <img src="static/images/finesplat.png" alt="FineSplat Overview" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
           <figcaption class="has-text-centered is-size-6 mt-2">
-            Figure 2：The overall framework of our FineSplat.
+            Figure 2: The overall framework of our FineSplat.
           </figcaption>
         </figure>
       </div>
@@ -357,23 +357,29 @@
         <div class="content has-text-justified">
           <p>
             <strong>Qualitative Comparisons of 3D Object Localization:</strong> 
+            <p>&nbsp;</p>
+            As shown in Figure 3, we provide visualizations of 3D object localization results from different methods. The results indicate that, compared to other methods, our proposed FineSplat can accurately handle a variety of fine-grained queries. For instance, in the Teatime scene, given the query <strong>"a white tag with DALL·E brand"</strong>, although GAGS and LangSplatV2 both obtain correct localization results, their activated regions extend far beyond the actual extent of the target object. In contrast, our method achieves accurate localization and produces an activated region that closely matches the target object.
           </p>
         </div>
         <figure class="image is-centered">
           <img src="static/images/localization.png" alt="Localization" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
           <figcaption class="has-text-centered is-size-6 mt-2">
-            Figure 3：Qualitative comparisons of fine-grained open-vocabulary 3D object localization on the Fine-OVS dataset. Black dashed boxes denote the annotated regions, and red points correspond to the predictions of the model.
+            Figure 3: Qualitative comparisons of fine-grained open-vocabulary 3D object localization on the Fine-OVS dataset. Black dashed boxes denote the annotated regions, and red points correspond to the predictions of the model.
           </figcaption>
         </figure>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
         <div class="content has-text-justified">
           <p>
-            <strong>Qualitative Comparisons of 3D Semantic Segmentation:</strong>   
+            <strong>Qualitative Comparisons of 3D Semantic Segmentation:</strong> 
+            <p>&nbsp;</p>
+            We present the 3D semantic segmentation visualization results on the Fine-OVS dataset, as shown in Figure 4. Given fine-grained queries, the semantic segmentation results of LangSplat, GAGS, and LangSplatV2 are suboptimal. On the one hand, these methods may fail to accurately activate the target region, resulting in incorrect segmentation. On the other hand, even when the target is successfully activated, they often concurrently activate additional regions, leading to accurate 3D object localization but significantly lower 3D semantic segmentation IoU scores. In contrast, our proposed FineSplat not only accurately activates the target object regions, but also produces activation boundaries that closely align with the Ground Truth, significantly outperforming existing methods. The results demonstrate that FineSplat achieves both high precision and high consistency, providing an effective solution for fine-grained scene understanding.
           </p>
         </div>
         <figure class="image is-centered">
           <img src="static/images/segmentation.png" alt="Segmentation" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
           <figcaption class="has-text-centered is-size-6 mt-2">
-            Figure 4：Qualitative comparisons of fine-grained open-vocabulary 3D semantic segmentation on the Fine-OVS dataset.
+            Figure 4: Qualitative comparisons of fine-grained open-vocabulary 3D semantic segmentation on the Fine-OVS dataset.
           </figcaption>
         </figure>
       </div>
