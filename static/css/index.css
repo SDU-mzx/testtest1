@@ -41,9 +41,9 @@ body {
 
 .video-container{
   position: relative;
-  width: 70%;               /* 占父容器 75% */
-  max-width: 1500px;
-  margin: 0 auto;
+  width: 70vw;              /* 占屏幕宽度 70%（一多半） */
+  max-width: 1300px;        /* 可选：别太大 */
+  margin: 0 auto;           /* 居中 */
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
