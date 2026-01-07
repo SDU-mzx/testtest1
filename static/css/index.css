@@ -41,8 +41,8 @@ body {
 
 .video-container{
   position: relative;
-  width: 75%;               /* 占父容器 75% */
-  max-width: 1200px;
+  width: 70%;               /* 占父容器 75% */
+  max-width: 1500px;
   margin: 0 auto;
   padding-bottom: 56.25%;
   height: 0;
